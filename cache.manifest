@@ -1,0 +1,28 @@
+CACHE MANIFEST
+#version 0.1
+CACHE:
+images/logo.png
+images/album.png
+images/back_icon.png
+images/bio.png
+images/default-artist.png
+images/facebook.png
+images/instagram.png
+images/news.png
+images/sound.png
+images/twitter.png
+images/video.png
+images/youtube.png
+css/styles.css
+favicon.ico
+js/enquire.min.js
+http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css
+http://code.jquery.com/jquery-1.11.3.min.js
+http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js
+js/lodash.min.js
+js/objects.js
+js/scripts.js
+js/resize.js
+NETWORK:
+*
+FALLBACK:

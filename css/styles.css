@@ -1,0 +1,415 @@
+.imagenLista{
+    height: 80px;
+    width: 80px;
+}
+.textoRed{
+    color:darkgreen;
+    vertical-align: bottom;
+    margin-top:8px;
+    margin-bottom: 10px;
+}
+#nombreArtistaAlbum,#nombreAlbum{
+    float:left;
+}
+
+.menuLateral{
+    margin-right:20px;
+    background: linear-gradient(180deg,darkgreen,black);
+    border:groove;
+        border-radius: 10px;
+}
+.menuLateral > h4{
+        color:white;
+}
+.ultimasBusquedas{
+    list-style-type: none;
+    padding:0;
+}
+.ultimasBusquedas > li{
+    margin:20px;
+}
+.ultimasBusquedas .ui-btn{
+    text-align: center;
+}
+
+
+#nombreAlbum{
+    margin-left: 20px;
+    color:green;
+    font-style: oblique;
+}
+#contenidoCanciones{
+    padding: 0;
+    margin:0;
+}
+.sinConexion > p{
+    text-align: center;
+}
+
+.quitaPunto{
+    list-style-type: none;
+}
+
+.elementoLista{
+    padding-top:10px;
+}
+.iconoSonido{
+    width: 20px;
+    height:20px;
+    margin:5px;
+    vertical-align: middle;
+    float:right;
+}
+
+.iconoFooter{
+    width: 40px;
+    height: 40px;
+}
+
+.videoPrincipal{
+    width: 100%;
+    
+}
+
+.ui-btn .name{
+    font-size: 14px;
+    font-weight: bold;
+    margin:0;
+}
+
+.ui-btn .tituloCancion{
+    margin:10px;
+    font-weight: bold;
+}
+
+.cabeceraMenu{
+    border-bottom: 1px solid;
+    margin:0;
+    padding: 10px;
+    
+}
+.contenedor{
+    overflow: hidden;
+}
+.contenido{
+    margin-left:10px;
+    margin-right:10px;
+}
+#caratula{
+    width: 100%;
+}
+.derecha{
+    float:right;
+}
+.izquierda{
+    float:left;
+}
+
+#tiluloAlbum{
+    text-align: center;
+}
+
+#bio{
+    font-size: 0.8em;
+}
+
+.logo{
+    width: 250px;
+    margin-left: 15px;
+}
+
+#contenidoArtista h2{
+    margin-top: 0;
+}
+
+#bio{
+    margin:0;
+}
+#redesSociales{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    overflow:hidden;
+}
+
+.titulo{
+    font-size: 13px;
+}
+
+.mainBox{
+    background:linear-gradient(180deg,darkgreen,black);
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 50px;
+}
+
+#busquedasCollapse{
+    width: 100%;
+    background:linear-gradient(180deg,darkgreen,black);
+    margin:0;
+    color:white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.centerText{
+    text-align: center;    
+}
+.centraFiltro{
+    text-align: center;
+    margin:0;
+}
+
+#albumsArtistas{
+    overflow: hidden;
+}
+#contenido h4{
+    margin:10px;
+}
+
+.header{
+    background-color:black;
+}
+
+.atras{
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+#footer{
+    background-color: rgba(250,250,250,0.9);
+}
+#footer2{
+    position:fixed;
+}
+#contenidoCanciones li,#albumCanciones > div{
+    background-image: url('../images/sound.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 97% 5%;
+}
+.bordeBajo{
+    border-bottom: 1px dotted;
+}
+.ui-btn{
+    text-align:left;
+    vertical-align: middle;
+    margin:0;
+}
+
+.eliminaMargenes{
+    margin:5px 0 0 0;
+    
+}
+    
+@media all and (max-width: 50em) {
+    .bk-point1 .ui-block-a, 
+    .bk-point1 .ui-block-b,
+    .bk-point2 > .ui-block-a,
+    .bk-point2 > .ui-block-b{ 
+        width: 100%; 
+        float:none; 
+    }
+
+    .bk-point1 .ui-block-b{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .imagenListaAlbums{
+        width: 33%;
+    }
+    #contenido{
+        width: 100%;
+    }
+    .bk-point4 .ui-block-a{
+        display: none;
+    }
+    .bk-point4 .ui-block-b,
+    .bk-point4 .ui-block-c,
+    .bk-point4 .ui-block-d{
+        width: 100%;
+        float: none;
+    }
+    .bk-point5 .ui-block-a{
+        background-color: rgba(30,150,20,0.4);
+        border-radius: 15px;
+        width: 20%;
+    }
+    .bk-point5 .ui-block-a:hover{
+        background-color: rgba(30,150,20,0.8);
+        border-radius: 15px;
+        width: 20%;
+    }
+    .bk-point5 .ui-block-b{
+        width: 60%;
+    }
+    .bk-point6 .ui-block-a,
+    .bk-point6 .ui-block-b{
+        width: 100%;
+    }
+    .bk-point8 > .ui-block-a,
+    .bk-point8 > .ui-block-b,
+    .bk-point8 > .ui-block-c,
+    .bk-point8 > .ui-block-d{
+        width: 25%;
+    }
+    #bloqueArtista .ui-block-b,#footerArtista2{
+        display:none;
+    }
+    
+   #nombreArtistaAlbum{
+    float:none;
+    text-align: center;
+    }
+#nombreAlbum{
+    font-size: 20px;
+    text-align: center;
+    float:none;
+    color:green;
+    font-style: normal;
+}
+    
+    .header > .ui-block-c{
+        display:none;
+    }
+
+    .iconosRedes{
+        display:block;
+        margin:0 auto;
+        width: 50px;
+        height:50px;
+    }
+    .logo{
+        width: 160px;
+        display: block;
+        margin: 0 auto;
+    }
+    #nombreArtista{
+        text-align: center;
+    }
+    #imagenArtista, #imagenAlbum{
+        width: 100%;
+    }
+    #busquedasArtista{
+        float:left;
+    }
+    #footer2{
+        display:none;
+    }
+}
+
+@media all and (min-width: 50em) {
+    .bk-point1 .ui-block-a{ 
+        width: 30%; 
+    }
+    .bk-point2 > .ui-block-a{ 
+        width: 20%;
+        height: 100%;
+        background:gray;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        position:fixed;
+    }
+    .bk-point2 >.ui-block-b{
+        width: 80%;
+    }
+    .bk-point3 .ui-block-a,
+    .bk-point2 .ui-block-b,
+    .bk-point3 .ui-block-c{
+        width: 100%;
+        float: none;
+    }
+    .bk-point4 .ui-block-b,
+    .bk-point4 .ui-block-c,
+    .bk-point4 .ui-block-d{
+        border:groove;
+        border-radius: 10px;
+    }
+    .bk-point5 .ui-block-a{
+        display: none;
+    }
+    .bk-point5 .ui-block-b{
+        width: 35%;
+    }
+    .bk-point5 .ui-block-c{
+        width: 50%;
+    }
+    
+    .little{
+        display:none;
+    }
+    
+    .bk-point6 > .ui-block-a{
+        width: 30%;
+    }
+    .bk-point6 > .ui-block-b{
+        width: 70%;
+        
+    }
+    .bk-point7 > .ui-block-a{
+        width: 60%;
+        padding: 20px;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border:groove;
+    }
+    .bk-point7 > .ui-block-a > h3{
+        margin-top:0;
+    }
+    .bk-point7 > .ui-block-b{
+        width: 30%;
+        background-color: black;
+        border-radius: 20px;
+    }
+    .bk-point8 > .ui-block-a,
+    .bk-point8 > .ui-block-b,
+    .bk-point8 > .ui-block-c,
+    .bk-point8 > .ui-block-d{
+        width: 50%;
+    }
+    
+     #footerArtista{
+        display:none;
+    }
+    
+    #footerAlbum{
+        display:none;
+    }
+        
+     .imagenListaAlbums{
+        width: 25%;
+    }
+    
+    #imagenArtista,  #imagenAlbum{
+        width: 100%;
+        border-radius: 20px;
+        border:groove;
+    }
+    
+
+    #contenido{
+        padding:15px;
+
+        width: 100%;
+    }
+    #contenido ul{
+        margin-top:15px;
+    }
+     .iconosRedes{
+        width: 30px;
+        height:30px;
+        margin-top:5px;
+        margin-left: 10px;
+    }
+
+
+    #footer{
+        display:none;
+    }
+}
+
+

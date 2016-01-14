@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Music Tracker</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/enquire.min.js"></script>
+    </head>
+    <body>
+
+        <div data-role="page" id="main">
+
+            <div class="cabecera" data-role="header" data-position="fixed">
+                <div class="header ui-grid-a bk-point1" >
+                    <a  href="#main"><div class="ui-block-a"><img class="logo" src="images/logo.png" alt=""></div></a>
+                    <div class="ui-block-b"><input type="text" name="search" class="busqueda"  placeholder="¿Qué quieres buscar?"></div>
+                    
+                </div>
+                <div class="little" data-role="navbar">
+                    <ul>
+                        <li><a id="buscaArtista" href="#"><p class="centraFiltro">Artista</p></a></li>
+                        <li><a id="buscaAlbum" href="#"><p class="centraFiltro">Album</p></a></li>
+                        <li><a id="buscaCancion" href="#"><p class="centraFiltro">Canción</p></a></li>
+                    </ul>
+                     </div>
+            </div>
+
+            <div id="contenido"  class="ui-block-b ui-grid-c bk-point4">
+                <div class="ui-block-a">
+                    <div class="menuLateral">
+                        <h4 class="centerText">Últimas búsquedas</h4>
+                        <ul class="ultimasBusquedas">
+                            <li><a class="busquedaArtistas" href="#" data-role="button">Artistas</a></li>
+                            <li><a class="busquedaAlbums" href="#" data-role="button">Albums</a></li>
+                            <li><a class="busquedaCanciones" href="#" data-role="button">Canciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ui-block-b">
+                    <h4 class="centerText">Artistas</h4>
+                    <ul id="contenidoArtistas"></ul>
+                </div>
+                <div class="ui-block-c">
+                    <h4 class="centerText">Albums</h4>
+                    <ul id="contenidoAlbums"></ul>
+                </div>
+                <div class="ui-block-d">
+                    <h4 class="centerText">Canciones</h4>
+                    <ul id="contenidoCanciones"></ul>
+                </div>
+
+
+
+            </div>
+
+
+            <div id="footer" data-role="footer" data-position="fixed">
+                <a id="busquedasCollapse" href="#" class="centerText">
+                    <p class="centraFiltro">Últimas búsquedas</p>
+                </a>
+                <div id="CollapseContent" class="ui-grid-b bk-point3">
+
+                   <div data-role="navbar">
+                    <ul>
+                        <li><a class="busquedaArtistas" href="#"><p class="centraFiltro">Artistas</p></a></li>
+                        <li><a class="busquedaAlbums" href="#"><p class="centraFiltro">Albums</p></a></li>
+                        <li><a class="busquedaCanciones" href="#"><p class="centraFiltro">Canciones</p></a></li>
+                    </ul>
+                     </div>
+
+                </div>
+            </div>
+
+            <div data-role=footer id="footer2" data-position="fixed">KIIK</div>
+        </div>
+        <div data-role="page" id="Artista" data-title="Artista">
+            <div class="cabecera" data-role="header" data-position="fixed">
+                <div class="header ui-grid-b bk-point5" >
+                    <div class="ui-block-a"><a href="#main"><img class="atras" src="images/back_icon.png" alt=""></a></div>
+                    <div class="ui-block-b"><img class="logo" src="images/logo.png" alt=""></div>
+                    <div class="ui-block-c"><input type="text" name="search" class="busqueda" placeholder="¿Qué quieres buscar?"></div>
+                </div>
+            </div>
+            <div data-role="content" id="contenidoArtista">
+                <div id="bibliografia" class="ui-grid-a bk-point6">
+                    <h2 id="nombreArtista"></h2>
+                    <div class="ui-block-a">   
+                        <img id="imagenArtista" src="images/default-artist.png" alt="">
+                        <div id="redesSociales" class="ui-grid-c bk-point8">
+
+                        </div>
+                        <div id="web" class="centerText"></div>
+                    </div>
+                    <div id="bloqueArtista" class="ui-block-b ui-grid-a bk-point7">
+                        <div class="ui-block-a" id="seccionArtista">
+                            <h3 class="centerText ">Biografía</h3>
+                            <p id="bio"></p>
+                        </div>
+                        <div class="ui-block-b">
+                            <ul data-role="listview" class="ui-listview-inset ui-corner-all ui-shadow">
+                                <li><a class="albums" href="#">Albums</a></li>
+                                <li><a class="biografia" href="#">Biografía</a></li>
+                                <li><a class="noticias" href="#">Noticias</a></li>
+                                <li><a class="videos" href="#">Videos</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="footerArtista" data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a class="albums" href="#"><img class="iconoFooter" src="images/album.png" alt=""></a></li>
+                        <li><a class="biografia" href="#"><img class="iconoFooter" src="images/bio.png" alt=""></a></li>
+                        <li><a class="noticias" href="#"><img class="iconoFooter" src="images/news.png" alt=""></a></li>
+                        <li><a class="videos" href="#"><img class="iconoFooter" src="images/video.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>  
+            <div id="footerArtista2" data-role="footer" data-position="fixed">
+                <p class="derecha">Pablo Jiménez Casado</p>
+            </div>   
+
+        </div>
+        <div data-role="page" id="Album" data-title="Albums">
+            <div class="cabecera" data-role="header" data-position="fixed">
+                <div class="header ui-grid-b bk-point5" >
+                    <div class="ui-block-a"><a href="#main"><img class="atras" src="images/back_icon.png" alt=""></a></div>
+                    <div class="ui-block-b"><img class="logo" src="images/logo.png" alt=""></div>
+                    <div class="ui-block-c"><input type="text" name="search" class="busqueda" placeholder="¿Qué quieres buscar?"></div>
+                </div>
+            </div>
+            <div data-role="content" id="contenidoAlbum">
+                <div class="ui-grid-a bk-point6">
+                    <h1 id="nombreArtistaAlbum"></h1>
+                    <h1 id="nombreAlbum"></h1>
+                </div>
+                <div class="ui-grid-a bk-point6">
+
+                    <div class="ui-block-a">   
+                        <img id="imagenAlbum" src="images/default-artist.png" alt="">
+                        <p id="fecha_pub"></p>
+                        <p id="popularidad"></p>
+                    </div>
+                    <div class="ui-block-b ui-grid-a bk-point7">
+                        <div class="ui-block-a">
+                            <h3 class="centerText ">Canciones</h3>
+                            <div id="albumCanciones"></div>
+                        </div>
+                        <div class="ui-block-b">
+                            <ul data-role="listview" class="ui-listview-inset ui-corner-all ui-shadow">
+                                <li><a class="artista" href="#">Artista</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+ 
+
+        </div>
+        <div id="Audios">
+
+        </div>
+
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/lodash.min.js"></script>
+        <script src="js/resize.js"></script>
+        <script src="js/objects.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+</html>
